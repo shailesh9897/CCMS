@@ -12,14 +12,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ccms.entity.Customer;
 @Repository
-public class CostumerDAOImpli implements CustomerDAO {
+public class CustomerDAOImpli implements CustomerDAO {
 	
 	@Autowired
 	private SessionFactory sessionFactory;
 	
 
 	@Override
-	@Transactional
+	
 	public List<Customer> getCustomerList() {
 		//Get the session
 		Session session=sessionFactory.getCurrentSession();
