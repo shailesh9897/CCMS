@@ -7,4 +7,6 @@ public interface CustomerDAO {
 	
 	public List<Customer> getCustomerList();
 
+	public void addCustomerDao(Customer objCustomer);
+
 }

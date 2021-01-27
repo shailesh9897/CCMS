@@ -21,4 +21,11 @@ public class CustomerService implements CustomerServiceInt {
 		return customerdDAO.getCustomerList();
 	}
 
+	@Override
+	@Transactional
+	public void addCustomer(Customer objCustomer) {
+		customerdDAO.addCustomerDao(objCustomer);
+		
+	}
+
 }

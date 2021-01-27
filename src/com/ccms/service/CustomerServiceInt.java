@@ -9,5 +9,7 @@ public interface CustomerServiceInt {
 	
 public List<Customer> getCustomersList();
 
+public void addCustomer(Customer objCustomer);
+
 
 }
